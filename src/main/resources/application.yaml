@@ -1,0 +1,12 @@
+server:
+  port: 8089
+
+kafka:
+  topic:
+    name: transaction-request
+spring:
+  kafka:
+    bootstrap-server: localhost:9092
+    producer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
